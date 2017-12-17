@@ -131,7 +131,7 @@ int NextCity( int pos ){
 		if(ants[pos].visited[to] == 0){
 			p = (double) antProduct(from,to)/denom;
 
-			double x = (double) (rand()/RAND_MAX); 
+			double x =  ((double)rand()/(double)RAND_MAX); 
       //printf("Denon: %18.50f -- X: %18.50f, p: %18.50f\n",denom, x,p);
 			if(x < p){
         //printf("%lf -- X\n", x);

@@ -281,7 +281,7 @@ __device__ int NextCity(struct ant *ants_d, int pos, float *distances_d, double 
 
 		if(ants_d[pos].visited[to] == 0){
 			p = (double) antProduct(from, to, hormone_d, distances_d)/denom;
-			double x = (double)(curand(&state_d[pos])% 1000000000000000000)/1000000000000000000;
+			double x = (double)(curand(&state_d[pos]) % 1000000000)/1000000000.0;
 			if(x < p){
 				break;
 			}
